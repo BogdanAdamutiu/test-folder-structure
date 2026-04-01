@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currently_Lent_Equipment</fullName>
+    <columns>NAME</columns>
+    <columns>Equipment_Name__c</columns>
+    <columns>Serial_Number__c</columns>
+    <columns>Equipment_Type__c</columns>
+    <columns>Account__c</columns>
+    <columns>Lent_Date__c</columns>
+    <columns>Expected_Return_Date__c</columns>
+    <columns>Days_Since_Lent__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Lent</value>
+    </filters>
+    <label>Currently Lent Equipment</label>
+</ListView>
